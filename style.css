@@ -1,0 +1,106 @@
+#container>div{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background-color: aquamarine;
+    color:red;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: large;
+    border: 1px solid black;
+    
+}
+#container{
+    margin:auto;
+    margin-top: 200px;
+    width: 70%;
+    
+    
+}
+
+#tooltipright{
+   /* visibility: hidden; */
+ width: 120px;
+   background-color: black;
+   color:white;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px;
+   top:25%;
+   left:102%;
+   z-index: 1;
+   opacity: 0;
+   transition: opacity 1s;
+   
+    
+}
+#right:hover #tooltipright{
+ opacity: 1;
+ visibility: visible;
+ 
+}
+#tooltipright{
+    position: absolute;
+}
+
+#left:hover #tooltipleft{
+ opacity: 1;
+ visibility: visible;
+}
+#tooltipleft{
+    width:120px;
+    background-color: black;
+    color:white;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    right: 102%;
+    z-index: 1;
+    top:25%;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+#bottom:hover #tooltipbottom{
+     opacity: 1;
+     visibility: visible;
+}
+#tooltipbottom{
+    position: absolute;
+    background-color: black;
+    color:white;
+    border-radius: 6px;
+    padding: 5px;
+    width: 150px;
+    top: 105%;
+    left:10%;
+    z-index: 1;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+#top:hover #tooltiptop{
+  opacity: 1;
+  visibility: visible;
+}
+#tooltiptop{
+  position:absolute;
+  background-color: black;
+  color:white;
+  padding: 5px ;
+  bottom: 105%;
+  left: 10%;
+  border-radius: 6px;
+  width: 150px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s;
+}
